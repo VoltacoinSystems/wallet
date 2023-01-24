@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- Meta -->
+    <title>Voltacoin Wallet</title>
+
+    <!-- Favicon -->
+    <link rel="icon" src="./art/images/favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./static/css/home.css">
+    <link rel="stylesheet" href="./static/css/fonts.css">
+
+    <!-- Scripts -->
+    <script 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"
+        src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"
+        integrity="sha512-QTnb9BQkG4fBYIt9JGvYmxPpd6TBeKp6lsUrtiVQsrJ9sb33Bn9s0wMQO9qVBFbPX3xHRAsBHvXlcsrnJjExjg==">
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <img class="brand" src="./art/images/brand.png">
+    </div>
+    
+    <div class="actions-container">
+        <div class="login">
+            <h1>Log in</h1>
+
+            <form class="voltacoin-login-form">
+                <div
+                    class="error-message" 
+                    style="display: none;"
+                    id="login-form-error-message" 
+                >
+                    <svg 
+                        width="24" 
+                        height="24" 
+                        fill="none" 
+                        stroke="#ff5191" 
+                        stroke-width="2" 
+                        viewBox="0 0 24 24" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        style="--inline-stroke: #ff549b;"
+                    >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+
+                    <p>Could not log in due to an error.</p>
+                </div>
+
+                <div
+                    style="display: none;"
+                    class="success-message"
+                    id="login-form-success-message" 
+                >
+                    <svg 
+                       width="24" 
+                        height="24" 
+                        fill="none" 
+                        stroke="#11efe3" 
+                        stroke-width="2" 
+                        viewBox="0 0 24 24" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        style="--inline-stroke: #27fff7;" 
+                    >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+
+                    <p>You have logged in successfully.</p>
+                </div>
+
+                <input type="text" name="address" placeholder="Address">
+                <input type="password" name="password" placeholder="Password">
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div class="transaction-payment">
+            <h1>Send a payment</h1>
+
+            <form class="voltacoin-transaction-payment-form">
+                <div
+                    class="error-message" 
+                    style="display: none;"
+                    id="transaction-payment-form-error-message" 
+                >
+                    <svg 
+                        width="24" 
+                        height="24" 
+                        fill="none" 
+                        stroke="#ff5191" 
+                        stroke-width="2" 
+                        viewBox="0 0 24 24" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        class="small-margin-top"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        style="--inline-stroke: #ff549b;"
+                    >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+            
+                    <p>The payment was not sent due to an error.</p>
+                </div>
+
+                <div
+                    style="display: none;"
+                    class="success-message"
+                    id="transaction-payment-form-success-message" 
+                >
+                    <svg 
+                        width="24" 
+                        height="24" 
+                        fill="none" 
+                        stroke="#11efe3" 
+                        stroke-width="2" 
+                        viewBox="0 0 24 24" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round"
+                        class="small-margin-top"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="--inline-stroke: #27fff7;" 
+                    >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+
+                    <p>The payment has been sent successfully.</p>
+                </div>
+            
+                <input type="number" name="amount" placeholder="Amount"> 
+                <input type="text" name="to_address" placeholder="Address"> 
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <div class="transaction-history">
+            <h1>History</h1>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./scripts/forms/login.js"></script>
+    <script type="text/javascript" src="./scripts/renderHistory.js"></script>
+    <script type="text/javascript" src="./scripts/forms/transactions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+@font-face {
+    font-weight: 300;
+    font-family: 'Soehne';
+    src: url('../../art/fonts/SoehneLeicht.woff2');
+}
+
+@font-face {
+    font-weight: 500;
+    font-family: 'Soehne';
+    src: url('../../art/fonts/SoehneBuch.woff2');
+}
+
+@font-face {
+    font-weight: 600;
+    font-family: 'Soehne';
+    src: url('../../art/fonts/SoehneKraftig.woff2');
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: 'Soehne';
+    src: url('../../art/fonts/SoehneHalfbett.woff2');
+}

@@ -1,0 +1,140 @@
+* {
+    font-weight: 500;
+    color: rgb(245, 245, 245);
+    font-family: 'Soehne', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(17, 17, 17);
+}
+
+.header .brand {
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.actions-container {
+    display: flex;
+}
+
+.error-message,
+.success-message {
+    display: flex;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+.error-message p {
+    color: #FF5191;
+}
+
+.success-message p {
+    color: #11EFE3;
+}
+
+svg {
+    margin-top: 16px;
+    margin-right: 5px;
+}
+
+.small-margin-top {
+    margin-top: 12px;
+}
+
+.brand,
+.login,
+.voltacoin-login-form,
+.transaction-payment {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.login h1, 
+.transaction-payment h1, 
+.transaction-history h1 {
+    font-weight: 700;
+}
+
+.login p, 
+.transaction-payment p,
+.transaction-history p {
+    font-size: 14px;
+}
+
+.voltacoin-login-form, .voltacoin-transaction-payment-form {
+    padding: 20px;
+    display: table;
+    border-radius: 7px;
+    border: 1px solid rgb(44, 44, 44);
+    background-color: rgb(17, 17, 17);
+}
+
+p {
+    font-size: 18px;
+}
+
+input {
+    height: 36px;
+    width: 404px;
+    display: table;
+    font-size: 14px;
+    margin-left: 2px;
+    font-weight: 400;
+    margin-right: 2px;
+    border-radius: 7px;
+    padding-left: 12px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(44, 44, 44);
+    background-color: rgb(17, 17, 17);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+button {
+    border: none;
+    padding: 6px;
+    height: 40px;
+    width: 190px;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 7px;
+    background-color: #896BFF;
+}
+
+.transaction-card {
+    width: 590px;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    border-radius: 7px;
+    border: 1px solid rgb(44, 44, 44);
+    background-color: rgb(17, 17, 17);
+}
+
+.transaction-card h4 {
+    font-weight: 700;
+    margin-right: 50px;
+}
+
+.transaction-card h1 {
+    font-size: 48px;
+}
+
+.transaction-state[type="Incoming"] {
+    color: #11EFE3;
+}
+
+.transaction-state[type="Outcoming"] {
+    color: #FF5191;
+}
